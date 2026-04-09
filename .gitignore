@@ -1,0 +1,12 @@
+# 컴파일된 클래스 파일 (스크린샷의 .class 파일들)
+*.class
+bin/
+
+# 이클립스 설정 파일 (스크린샷의 .classpath, .project 등)
+.classpath
+.project
+.settings/
+
+# 기타 OS 및 IDE 임시 파일
+.DS_Store
+Thumbs.db

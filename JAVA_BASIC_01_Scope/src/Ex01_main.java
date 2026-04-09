@@ -37,6 +37,15 @@ class Dept { //default class Dept
 
 // 연습용 (class Dept) > 접근자를 쓰지 않는 ; 접근자 생략 > Default > 같은 폴더에서만 .. 
 
+
+class Test{
+	int i; // 해당 변수가 생성되는 메모리 위치 >> 힙 공간
+	void print(){
+		for(int i =0; i <= 100; i++){
+
+		}
+	}
+}
 public class Ex01_main {
 	public static void main(String[] args) {
 		Emp emp = new Emp();

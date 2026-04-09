@@ -10,3 +10,5 @@ bin/
 # 기타 OS 및 IDE 임시 파일
 .DS_Store
 Thumbs.db
+.metadata/
+.idea/

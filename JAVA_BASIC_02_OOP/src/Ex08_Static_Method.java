@@ -1,0 +1,5 @@
+
+public class Ex08_Static_Method {
+	public static void main(String[] args) {
+	}
+}

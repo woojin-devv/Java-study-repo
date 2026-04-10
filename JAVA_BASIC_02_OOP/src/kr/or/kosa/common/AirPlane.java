@@ -6,15 +6,13 @@ package kr.or.kosa.common;
 public class AirPlane {
 	private int airNum;
 	private String airName;
+	
 	// 객체간 공유 자원 (static)
 	private static int airTotalCount; //공유되면서 증가해야 하기 때문에 static 선언 
 
-	/*
-	 * 
-	 * 
+	/* 
 	 * 우리 회사는 비행기를 주문 제작 판매하는 회사입니다. 
 	 * 우리 회사는 비행기를 생산하는 설계도를 만들려고 합니다. 
-	 * 
 	 * 
 	 * 요구사항
 	 * 1. 비행기를 생산하고 비행기의 이름과 번호를 부여해야 한다.
@@ -24,8 +22,6 @@ public class AirPlane {
 		 * 		생성자 사용 금지 
 		 *		this 사용 금지 
 	 *			>> 변수, 함수, 접근 제한자 
-	 *
-	 
 	 	객체 한개 비행기 한대 
 	 	AirPlane air707 = new AirPlane()
 	 	air707.자원 = "대한항공"
@@ -36,19 +32,23 @@ public class AirPlane {
 	 	총 2
 	 * 
 	 */
-	public void makeAirPlane(int num, String name) {
-		airNum = num; 
-		airName = name;
-		airTotalCount++;
+	public void makeAirPlane(int airNum, String airName) {
+		this.airNum = airNum; 
+		this.airName = airName;
+	}
+	
+	public void AirPlane(int airNum, String airName) {
+		this.airNum = airNum;
+		this.airName = airName;
+		this.airTotalCount++;
 		airDisplay();
 	}
 	
 	private void airDisplay() {
-		System.out.printf("번호[%d], 이름[%s] \n", airNum, airName);
+		System.out.printf("번호[%d], 이름[%s] \n", this.airNum, this.airName);
 	}
 	
 	public void airPlaneTotalCount() {
-		System.out.printf("비행기[%d], 이름[%s] \n", airNum, airName);
+		System.out.printf("비행기[%d], 이름[%s] \n", this.airNum, this.airName);
 	}
-	
 }
